@@ -1,19 +1,8 @@
 function productOfArray(array) {
-  let result = array[0];
-
-  function helper(helperInput) {
-    if (helperInput.length === 1) {
-      return;
-    }
-
-    result *= helperInput[1];
-
-    helper(helperInput.slice(1));
+  if (array.length === 0) {
+    return 1;
   }
-
-  helper(array);
-
-  return result;
+  return array[0] * productOfArray(array.slice(1));
 }
 
 // productOfArray([1,2,3]) // 6

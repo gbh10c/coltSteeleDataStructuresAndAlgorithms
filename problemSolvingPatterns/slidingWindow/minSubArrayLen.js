@@ -1,3 +1,7 @@
+// Write a function which accepts an array of positive integers and a positive integer.Infinity
+
+// This function should return the minimal length of a contiguous subarray of which the sum is greater than or equal to the integer passed to the function. Return 0 if there is no array.
+
 function minSubArrayLen(arr, int) {
   let total = 0;
   let start = 0;
